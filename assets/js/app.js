@@ -28,4 +28,22 @@
     wheel.style.transform = `rotate(${actualDeg}deg)`;
   });
 
+  
+
+let ajax = document.getElementById("ajax");
+ajax.addEventListener("click", test, true);
+let aleatoire;
+
+function getRandomInt(max) {
+  return Math.floor(Math.random() * 999999);
+}
+
+function test() {
+  aleatoire = getRandomInt(1);
+  // alert(aleatoire);
+  ajax.style.backgroundColor = "#" + aleatoire;
+  ajax.style.boxShadow = "7px 10px 63px 13px #" + aleatoire;
+  ajax.style.color = "white";
+}
+
 

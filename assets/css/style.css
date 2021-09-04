@@ -1,6 +1,6 @@
 #app
 {
-    width: 400px; height: 400px;
+    width: 800px; height: 800px;
     margin: 0 auto;
     position : relative;
 }
@@ -9,10 +9,14 @@
 {
     position: absolute;
     width: 60px;
-    left: 172px;
-    top: 20px;
+    left: 370px;
+    top: 100px;
+    transform: scale(10);
     z-index: 2;
-
+    -webkit-transform: scale(10);
+    -moz-transform: scale(10);
+    -ms-transform: scale(10);
+    -o-transform: scale(10);
 }
 
 .wheel
@@ -21,10 +25,18 @@
     height: 100%;
 }
 
-.button
+
+#ajax
 {
-    display: block;
-    width: 250px;
-    margin: 40px auto ;
-    cursor: pointer;
+  position:absolute;
+  top:95%;
+  left:18%;
+  width:70%;
+  height:25%;
+  font-size:5rem;
+  padding: 0 0 10px 0;
+  font-family: 'Palette Mosaic', cursive;
+  border-radius:30px;
+  border:0;
+  box-shadow: 7px 10px 63px 13px ;
 }
